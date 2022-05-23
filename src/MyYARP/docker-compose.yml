@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  weather.microservice.1:
+    image: ${DOCKER_REGISTRY-}weathermicroservice
+    build:
+      context: .
+      dockerfile: Weather.Microservice/Dockerfile
+
+  weather.microservice.2:
+    image: ${DOCKER_REGISTRY-}weathermicroservice
+    build:
+      context: .
+      dockerfile: Weather.Microservice/Dockerfile
+
+
+
+
